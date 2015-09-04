@@ -5,13 +5,19 @@ export default class InputPreview extends Component {
   render() {
     return (
       <div>
-        <h1>{'<Input />'}</h1>
-        <Input />
+        <h1><a name="Input">{'<Input />'}</a></h1>
+
+        <div>
+          <p>Examples:</p>
+          <Input type="text" />
+        </div>
 
         <div>
           <p>Usage:</p>
           <pre>
-            {'<Input type={STRING} placeholder={STRING} value={STRING} onChange={FUNCTION} />'}
+            <code>
+              {'<Input type={STRING} placeholder={STRING} value={STRING} onChange={FUNCTION} />'}
+            </code>
           </pre>
         </div>
 
