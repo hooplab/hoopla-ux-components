@@ -1,0 +1,49 @@
+.button {
+  background-color: $dark;
+  display: inline-block;
+  text-shadow: none;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: lighten($dark, 50);
+}
+
+// Types
+
+.button-primary {
+  background-color: $blue;
+  color: darken($blue, 50);
+}
+.button-success {
+  background-color: $green;
+  color: darken($green, 50);
+}
+.button-warning {
+  background-color: $yellow;
+  color: darken($yellow, 50);
+}
+.button-danger {
+  background-color: $red;
+  color: lighten($red, 50);
+}
+
+// Sizes
+.button-small {
+  padding: 0 15px;
+  height: 33px;
+  font-size: 0.75188rem;
+}
+
+.button-standard {
+  padding: 0 25px;
+  height: 50px;
+  font-size: 1rem;
+}
+.button-large {
+  padding: 0 30px;
+  height: 62.5px;
+  font-size: 1.25rem;
+}
