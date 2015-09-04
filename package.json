@@ -6,8 +6,7 @@
   "dependencies": {
     "eslint-config-airbnb": "0.0.8",
     "eslint-plugin-react": "^3.2.2",
-    "react-immutable-proptypes": "^1.1.0",
-    "react": "^0.13.3"
+    "node-neat": "^1.7.2",
   },
   "devDependencies": {
     "babel": "^5.8.21",

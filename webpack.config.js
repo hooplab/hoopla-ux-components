@@ -4,6 +4,10 @@ var exec = require('sync-exec');
 
 var __CURRENT_COMMIT__ = JSON.stringify(exec("git log -n 1 --pretty='%h'").stdout.trim());
 
+var sassPaths = require('node-neat').includePaths.map(function(sassPath) {
+  return "includePaths[]=" + sassPath;
+}).join('&');
+
 module.exports = {
   devtool: 'eval',
   entry: {
@@ -43,7 +47,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass'
+        loader: 'style!css!sass?' + sassPaths
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
