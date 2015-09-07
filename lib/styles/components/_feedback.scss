@@ -1,0 +1,47 @@
+.feedback {
+  border-radius: 3px;
+  margin: 20px;
+  @include outer-container;
+}
+
+.feedback-icon-container {
+  @include span-columns(2);
+  text-align: center;
+  padding-top: 20px;
+
+  i {
+    font-size: 15pt;
+  }
+}
+
+.feedback-content-container {
+  @include span-columns(10);
+
+  h4 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  p {
+    font-size: 10pt;
+  }
+}
+
+// Color modifiers
+.feedback-success {
+  background-color: lighten($green, 10);
+}
+
+.feedback-warning {
+  background-color: lighten($yellow, 10);
+}
+
+.feedback-alert {
+  background-color: lighten($red, 10);
+  color: lighten($red, 50);
+}
+
+.feedback-info {
+  background-color: lighten($blue, 10);
+}
