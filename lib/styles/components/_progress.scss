@@ -1,0 +1,70 @@
+.progress {
+  background-color: $grey;
+  margin: 10px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.progress-green {
+  .progress--bar {
+    background-color: $green;
+  }
+}
+
+.progress-red {
+  color: lighten($red, 50);
+  .progress--bar {
+    background-color: $red;
+    height: 3px;
+  }
+}
+
+.progress-dark {
+
+  .progress--bar {
+    background-color: $dark;
+  }
+}
+
+.progress-blue {
+  .progress--bar {
+    background-color: $blue;
+  }
+}
+
+.progress-flat {
+  height: 3px;
+  border-radius: 2px;
+
+  .progress--bar {
+    height: 3px;
+  }
+}
+
+.progress-standard {
+  height: 15px;
+  border-radius: 2px;
+
+  .progress--bar {
+    height: 15px;
+  }
+}
+
+.progress-large {
+  height: 30px;
+  border-radius: 2px;
+
+  .progress--bar {
+    height: 30px;
+    text-align: center;
+  }
+}
+
+.progress-text {
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
