@@ -1,0 +1,45 @@
+input.input {
+  transition: border 0.15s ease-in-out;
+  background-color: $white;
+  border-radius: 2px;
+  border: 2px solid $grey;
+  font-size: 1rem;
+  margin: 5px 10px 5px 0;
+  padding: 0px 15px;
+  min-height: 50px;
+  max-width: 100%;
+  display: inline;
+}
+
+
+input.input-alert-warning {
+  border-color: darken($yellow, 20);
+}
+input.input-alert-error {
+  border-color: $red;
+}
+input.input:focus {
+  outline: none;
+  border-color: $blue;
+}
+
+
+input.input-small {
+  min-height: 30px;
+  font-size: 0.75rem;
+  padding: 0 7.5px;
+}
+
+input.input-large {
+  min-height: 70px;
+  font-size: 1.5rem;
+  padding: 0 25px;
+}
+
+div.input-alert-warning {
+  color: darken($yellow, 20);
+}
+
+div.input-alert-error {
+  color: $red;
+}
