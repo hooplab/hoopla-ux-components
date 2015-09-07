@@ -14,6 +14,7 @@ export default class Navigation extends Component {
             <li><a href="#Radio">Radio</a></li>
             <li><a href="#Table">Table</a></li>
             <li><a href="#Checkbox">Checkbox</a></li>
+            <li><a href="#Icon">Icon</a></li>
             <li><a href="#ButtonizedInput">TODO: ButtonizedInput</a></li>
           </ul>
         </div>
