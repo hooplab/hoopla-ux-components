@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Button } from '../../lib/HooplaComponents';
+import { Button, Table } from '../../lib/HooplaComponents';
 
 export default class ButtonPreview extends Component {
   render() {
     return (
-      <div>
+      <div className="preview-component">
         <h1><a name="Button">{'<Button />'}</a></h1>
 
         <div>
@@ -27,18 +27,43 @@ export default class ButtonPreview extends Component {
           <p>Usage:</p>
           <pre>
             <code>
-              {'<button type={STRING} text={STRING} click={FUNCTION} />'}
+              {'<Button text={STRING} type={STRING} size={STRING} click={FUNCTION} />'}
             </code>
           </pre>
         </div>
 
         <div>
-          <p>Options:</p>
-          <ul>
-            <li>type: PropTypes.oneOf(['text', 'number', 'email']).isRequired</li>
-            <li>text: PropTypes.string.isRequired</li>
-            <li>click: PropTypes.func.isRequired</li>
-          </ul>
+          <Table>
+            <thead>
+              <tr>
+                <th>Property name</th>
+                <th>Property Type</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>text</td>
+                <td>String</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>type</td>
+                <td>default, primary, success, warning, danger</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>click</td>
+                <td>Function</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>size</td>
+                <td>small, standard, large</td>
+                <td>false</td>
+              </tr>
+            </tbody>
+          </Table>
         </div>
       </div>
     );
