@@ -1,37 +1,84 @@
 import React, { Component } from 'react';
-import { Input } from '../../lib/HooplaComponents';
+import { Input, Table } from '../../lib/HooplaComponents';
 
 export default class InputPreview extends Component {
   render() {
     return (
-      <div>
+      <div className="preview-component">
         <h1><a name="Input">{'<Input />'}</a></h1>
 
         <div>
           <p>Examples:</p>
-          <Input type="text" />
+          <Input type="text" placeholder="placeholder" />
+          <Input type="text" value="value" />
+          <Input type="text" alert="warning" alertMessage={`When alert="warning"`}/>
+          <Input type="text" alert="error" alertMessage={`When alert="error"`}/>
+          <Input type="text" placeholder="Small" size="small"/>
+          <Input type="text" placeholder="Large" size="large"/>
         </div>
 
         <div>
           <p>Usage:</p>
           <pre>
             <code>
-              {'<Input type={STRING} placeholder={STRING} value={STRING} onChange={FUNCTION} />'}
+              {`<Input
+                  type={STRING}
+                  size={STRING}
+                  placeholder={STRING}
+                  value={STRING}
+                  change={FUNCTION}
+                  alert={STRING}
+                  alertMessage={STRING} />`}
             </code>
           </pre>
         </div>
 
-        <div>
-          <p>Options:</p>
-          <ul>
-            <li>type: PropTypes.oneOf(['text', 'number', 'email']).isRequired,</li>
-            <li>placeholder: PropTypes.string</li>
-            <li>value: PropTypes.string</li>
-            <li>change: PropTypes.func</li>
-            <li>alert: PropTypes.oneOf(['error', 'warning'])</li>
-            <li>alertMessage: PropTypes.string</li>
-          </ul>
-        </div>
+        <Table>
+          <thead>
+            <tr>
+              <th>Property name</th>
+              <th>Property Type</th>
+              <th>Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>type</td>
+              <td>text, number, email</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>size</td>
+              <td>small, standar, large</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>placeholder</td>
+              <td>String</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>String</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>change</td>
+              <td>Function</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>alert</td>
+              <td>error, warning</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>alertMessage</td>
+              <td>String</td>
+              <td>false</td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
     )
   }
