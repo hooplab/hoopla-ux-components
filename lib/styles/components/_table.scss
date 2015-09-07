@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    th {
+      text-align: left;
+      border-bottom: 4px solid darken($grey, 5);
+      text-transform: uppercase;
+      padding: 10px 0;
+      color: darken($grey, 5);
+    }
+  }
+
+  tbody {
+    td {
+      padding: 10px 0;
+      border-bottom: 2px solid darken($grey, 5);
+    }
+  }
+}
