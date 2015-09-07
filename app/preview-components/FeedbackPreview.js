@@ -51,6 +51,6 @@ export default class FeedbackPreview extends Component {
           </tbody>
         </Table>
       </div>
-    )
+    );
   }
 }

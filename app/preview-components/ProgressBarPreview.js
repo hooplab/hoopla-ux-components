@@ -33,6 +33,6 @@ export default class ProgressBarPreview extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }

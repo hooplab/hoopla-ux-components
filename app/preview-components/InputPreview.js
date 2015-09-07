@@ -80,6 +80,6 @@ export default class InputPreview extends Component {
           </tbody>
         </Table>
       </div>
-    )
+    );
   }
 }

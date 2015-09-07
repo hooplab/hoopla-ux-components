@@ -51,6 +51,6 @@ export default class RadioPreview extends Component {
           </tbody>
         </Table>
       </div>
-    )
+    );
   }
 }

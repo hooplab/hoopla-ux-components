@@ -18,6 +18,6 @@ export default class Navigation extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
