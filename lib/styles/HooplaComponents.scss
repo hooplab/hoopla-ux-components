@@ -4,5 +4,14 @@
   font-family: "Lato";
 }
 
+@import 'bourbon';
+@import 'neat';
+
 @import "components/colors";
+@import "components/input";
 @import "components/buttons";
+@import "components/progress";
+@import "components/feedback";
+@import "components/checkbox";
+@import "components/radio";
+@import "components/table";
