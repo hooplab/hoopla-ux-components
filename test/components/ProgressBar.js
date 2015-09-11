@@ -20,5 +20,22 @@ function setup(options) {
 }
 
 describe('Component:ProgressBar', () => {
-  it('should render a progress bar component');
+  it('should render a progress bar component', () => {
+    const { output } = setup({value: 50});
+    const [ icon, content ] = output.props.children;
+
+    expect(output.type).toBe('div');
+    expect(icon.props.className).toBe('progress--bar');
+    expect(icon.props.style.width).toBe('50%');
+    expect(content).toBe(undefined);
+  });
+
+  it('should display the value as text in a large progress bar', () => {
+    const { output } = setup({size: 'large', value: 50});
+    const [ , content ] = output.props.children;
+
+    expect(content.type).toBe('div');
+    expect(content.props.className).toBe('progress-text');
+    expect(content.props.children.join('')).toBe('50%');
+  });
 });

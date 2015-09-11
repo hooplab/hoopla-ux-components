@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProgressBar } from '../../lib/HooplaComponents';
+import { ProgressBar, Table } from '../../lib/HooplaComponents';
 
 export default class ProgressBarPreview extends Component {
   render() {
@@ -18,20 +18,37 @@ export default class ProgressBarPreview extends Component {
           <p>Usage:</p>
           <pre>
             <code>
-              {'<ProgressBar type={STRING} placeholder={STRING} value={STRING} onChange={FUNCTION} />'}
+              {'<ProgressBar value={INTEGER} size={STRING} color={STRING} />'}
             </code>
           </pre>
         </div>
 
-        <div>
-          <p>Options:</p>
-          <ul>
-
-            <li>size: PropTypes.oneOf(['flat', 'standard', 'large']).isRequired</li>
-            <li>value: PropTypes.number.isRequired</li>
-            <li>color: PropTypes.oneOf(['green', 'red', 'dark', 'blue']).isRequired</li>
-          </ul>
-        </div>
+        <Table>
+          <thead>
+            <tr>
+              <th>Property name</th>
+              <th>Property Type</th>
+              <th>Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>value</td>
+              <td>0 - 100</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>size</td>
+              <td>flat, standar, large</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td>green, red, dark, blue</td>
+              <td>false</td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
     );
   }
