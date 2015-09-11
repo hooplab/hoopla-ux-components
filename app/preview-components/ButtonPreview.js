@@ -10,16 +10,16 @@ export default class ButtonPreview extends Component {
         <div>
           <p>Examples:</p>
           <div className="span-full spacing-1">
-            <Button text="Button" />
-            <Button type="primary" text="primary" />
-            <Button type="success" text="success" />
-            <Button type="warning" text="warning" />
-            <Button type="danger" text="danger" />
+            <Button>Button</Button>
+            <Button type="primary">Primary</Button>
+            <Button type="success">Success</Button>
+            <Button type="warning">Warning</Button>
+            <Button type="danger">Danger</Button>
           </div>
           <div className="span-full spacing-2">
-            <Button text="Small Button" size="small"/>
-            <Button text="Standard Button" size="standard" />
-            <Button text="Large Button" size="large" />
+            <Button size="small">Small Button</Button>
+            <Button size="standard">Standard Button</Button>
+            <Button size="large">Large Button</Button>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ export default class ButtonPreview extends Component {
           <p>Usage:</p>
           <pre>
             <code>
-              {'<Button text={STRING} type={STRING} size={STRING} click={FUNCTION} />'}
+              {'<Button type={STRING} size={STRING} click={FUNCTION}>Content</Button>'}
             </code>
           </pre>
         </div>
@@ -42,11 +42,6 @@ export default class ButtonPreview extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>text</td>
-                <td>String</td>
-                <td>true</td>
-              </tr>
               <tr>
                 <td>type</td>
                 <td>default, primary, success, warning, danger</td>
