@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, Table } from '../../lib/HooplaComponents';
+import { Icon, Table } from '../../src/HooplaComponents';
 
 export default class IconPreview extends Component {
   render() {

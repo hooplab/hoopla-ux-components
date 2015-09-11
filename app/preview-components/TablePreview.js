@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Checkbox, Table } from '../../lib/HooplaComponents';
+import { Checkbox, Table } from '../../src/HooplaComponents';
 
 export default class TablePreview extends Component {
   render() {

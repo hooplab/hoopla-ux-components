@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Feedback, Table } from '../../lib/HooplaComponents';
+import { Feedback, Table } from '../../src/HooplaComponents';
 
 export default class FeedbackPreview extends Component {
   render() {

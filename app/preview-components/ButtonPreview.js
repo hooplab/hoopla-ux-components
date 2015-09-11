@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Table } from '../../lib/HooplaComponents';
+import { Button, Table } from '../../src/HooplaComponents';
 
 export default class ButtonPreview extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Pagination, Table } from '../../lib/HooplaComponents';
+import { Pagination, Table } from '../../src/HooplaComponents';
 
 export default class PaginationPreview extends Component {
   render() {

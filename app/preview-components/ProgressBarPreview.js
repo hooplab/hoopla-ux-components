@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProgressBar, Table } from '../../lib/HooplaComponents';
+import { ProgressBar, Table } from '../../src/HooplaComponents';
 
 export default class ProgressBarPreview extends Component {
   render() {

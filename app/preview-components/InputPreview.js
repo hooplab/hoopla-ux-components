@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input, Table } from '../../lib/HooplaComponents';
+import { Input, Table } from '../../src/HooplaComponents';
 
 export default class InputPreview extends Component {
   render() {

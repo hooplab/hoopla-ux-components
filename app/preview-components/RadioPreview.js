@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Radio, Table } from '../../lib/HooplaComponents';
+import { Radio, Table } from '../../src/HooplaComponents';
 
 export default class RadioPreview extends Component {
   render() {
