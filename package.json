@@ -1,5 +1,6 @@
 {
   "name": "hoopla-components",
+  "main": "lib/HooplaComponents.js",
   "scripts": {
     "start": "node server.js",
     "test": "mocha --compilers js:babel/register --recursive",
