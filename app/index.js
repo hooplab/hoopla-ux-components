@@ -10,6 +10,7 @@ import RadioPreview from './preview-components/RadioPreview';
 import TablePreview from './preview-components/TablePreview';
 import CheckboxPreview from './preview-components/CheckboxPreview';
 import IconPreview from './preview-components/IconPreview';
+import PaginationPreview from './preview-components/PaginationPreview';
 
 import Navigation from './Navigation';
 
@@ -29,6 +30,7 @@ class App extends Component {
           <TablePreview />
           <CheckboxPreview />
           <IconPreview />
+          <PaginationPreview />
         </div>
       </div>
     );
