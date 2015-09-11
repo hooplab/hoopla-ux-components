@@ -12,9 +12,10 @@ export default class InputPreview extends Component {
           <Input type="text" placeholder="placeholder" />
           <Input type="text" value="value" />
           <Input type="text" alert="warning" alertMessage={`When alert="warning"`}/>
-          <Input type="text" alert="error" alertMessage={`When alert="error"`}/>
+          <Input type="text" label="Label" alert="error" alertMessage={`When alert="error"`}/>
           <Input type="text" placeholder="Small" size="small"/>
           <Input type="text" placeholder="Large" size="large"/>
+          <Input type="text" label="Label" />
         </div>
 
         <div>
@@ -26,6 +27,7 @@ export default class InputPreview extends Component {
                   size={STRING}
                   placeholder={STRING}
                   value={STRING}
+                  label={STRING}
                   change={FUNCTION}
                   alert={STRING}
                   alertMessage={STRING} />`}
@@ -59,6 +61,11 @@ export default class InputPreview extends Component {
             </tr>
             <tr>
               <td>value</td>
+              <td>String</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>label</td>
               <td>String</td>
               <td>false</td>
             </tr>
