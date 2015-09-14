@@ -9,7 +9,7 @@
     "test:watch": "npm test -- --reporter dot --watch",
     "build:lib": "babel src --out-dir lib && cp -r src/styles lib/styles",
     "build": "npm run build:lib",
-    "prepublish": "npm run clean && npm run build"
+    "postinstall": "npm run clean && npm run build"
   },
   "dependencies": {
     "eslint-config-airbnb": "0.0.8",
