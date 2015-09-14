@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import Feedback from '../../lib/components/Feedback';
+import Feedback from '../../src/components/Feedback';
 
 const { TestUtils } = React.addons;
 

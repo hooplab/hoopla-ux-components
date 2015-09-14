@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import ProgressBar from '../../lib/components/ProgressBar';
+import ProgressBar from '../../src/components/ProgressBar';
 
 const { TestUtils } = React.addons;
 

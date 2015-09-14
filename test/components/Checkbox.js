@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import Checkbox from '../../lib/components/Checkbox';
+import Checkbox from '../../src/components/Checkbox';
 
 const { TestUtils } = React.addons;
 

@@ -19,11 +19,11 @@ export default class Pagination extends Component {
     return (
       <div className="pagination">
         <div className="pagination-item">&laquo;</div>
-        {all.map(item => {
+        {all.map((item, index) => {
           if (item === currentPage) {
-            return <div className="pagination-item pagination-active">{item}</div>
+            return <div key={index} className="pagination-item pagination-active">{item}</div>
           } else {
-            return <div className="pagination-item">{item}</div>
+            return <div key={index} className="pagination-item">{item}</div>
           }
         })}
         <div className="pagination-item">&raquo;</div>

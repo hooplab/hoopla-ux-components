@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import Table from '../../lib/components/Table';
+import Table from '../../src/components/Table';
 
 const { TestUtils } = React.addons;
 

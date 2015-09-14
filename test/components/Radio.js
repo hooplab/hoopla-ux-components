@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import Radio from '../../lib/components/Radio';
+import Radio from '../../src/components/Radio';
 
 const { TestUtils } = React.addons;
 

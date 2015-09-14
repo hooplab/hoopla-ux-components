@@ -1,6 +1,6 @@
 import expect from 'expect';
 import React from 'react/addons';
-import Pagination from '../../lib/components/Pagination';
+import Pagination from '../../src/components/Pagination';
 
 const { TestUtils } = React.addons;
 
