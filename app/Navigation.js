@@ -10,6 +10,7 @@ export default class Navigation extends Component {
             <li><a href="#Feedback">Feedback</a></li>
             <li><a href="#Button">Button</a></li>
             <li><a href="#Input">Input</a></li>
+            <li><a href="#Textarea">Textarea</a></li>
             <li><a href="#ProgressBar">Progressbar</a></li>
             <li><a href="#Radio">Radio</a></li>
             <li><a href="#Table">Table</a></li>

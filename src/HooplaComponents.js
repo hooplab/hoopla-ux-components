@@ -1,4 +1,5 @@
 import Input from './components/Input';
+import Textarea from './components/Textarea';
 import Button from './components/Button';
 import ProgressBar from './components/ProgressBar';
 import Feedback from './components/Feedback';
@@ -13,6 +14,7 @@ require('./styles/HooplaComponents.scss');
 
 export default {
   Input,
+  Textarea,
   Button,
   ProgressBar,
   Feedback,

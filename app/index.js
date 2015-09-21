@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 require('./styles/app.scss');
 
 import InputPreview from './preview-components/InputPreview';
+import TextareaPreview from './preview-components/TextareaPreview';
 import ButtonPreview from './preview-components/ButtonPreview';
 import ProgressBarPreview from './preview-components/ProgressBarPreview';
 import FeedbackPreview from './preview-components/FeedbackPreview';
@@ -25,6 +26,7 @@ class App extends Component {
           <FeedbackPreview />
           <ButtonPreview />
           <InputPreview />
+          <TextareaPreview />
           <ProgressBarPreview />
           <RadioPreview />
           <TablePreview />
