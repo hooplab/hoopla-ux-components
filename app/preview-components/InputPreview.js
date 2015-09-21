@@ -16,6 +16,7 @@ export default class InputPreview extends Component {
           <Input type="text" placeholder="Small" size="small"/>
           <Input type="text" placeholder="Large" size="large"/>
           <Input type="text" label="Label" />
+          <Input type="text" label="Required input" required={true} />
         </div>
 
         <div>
@@ -28,6 +29,7 @@ export default class InputPreview extends Component {
                   placeholder={STRING}
                   value={STRING}
                   label={STRING}
+                  required={BOOL}
                   change={FUNCTION}
                   alert={STRING}
                   alertMessage={STRING} />`}
@@ -67,6 +69,11 @@ export default class InputPreview extends Component {
             <tr>
               <td>label</td>
               <td>String</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>Boolean</td>
               <td>false</td>
             </tr>
             <tr>
