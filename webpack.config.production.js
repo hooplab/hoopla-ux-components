@@ -20,6 +20,7 @@ config.plugins = [
 config.output = {
   path: path.join(__dirname, 'lib'),
   filename: '[name].bundle.js',
+  libraryTarget: 'umd'
 };
 
 config.module.loaders.push({

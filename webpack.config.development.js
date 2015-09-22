@@ -12,9 +12,7 @@ config.plugins = [
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoErrorsPlugin(),
   new webpack.DefinePlugin({
-    'process.env': {
-      'NODE_ENV': JSON.stringify('development')
-    },
+    'process.env.NODE_ENV': JSON.stringify('development'),
     '__CURRENT_COMMIT__': __CURRENT_COMMIT__
   }),
 ];
