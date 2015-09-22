@@ -10,8 +10,6 @@ var sassPaths = require('node-neat').includePaths.map(function(sassPath) {
 
 sassPaths += "&includePaths[]="+path.join(__dirname, 'node_modules/font-awesome/scss');
 
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 module.exports = {
   devtool: 'eval',
   entry: {
@@ -25,7 +23,7 @@ module.exports = {
     ]
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'lib'),
     filename: '[name].bundle.js',
     publicPath: '/static/'
   },
