@@ -1,8 +1,5 @@
-var path = require('path');
 var webpack = require('webpack');
-var exec = require('sync-exec');
-
-var __CURRENT_COMMIT__ = JSON.stringify(exec("git log -n 1 --pretty='%h'").stdout.trim());
+var path = require('path');
 
 var sassPaths = require('node-neat').includePaths.map(function(sassPath) {
   return "includePaths[]=" + sassPath;
@@ -11,7 +8,6 @@ var sassPaths = require('node-neat').includePaths.map(function(sassPath) {
 sassPaths += "&includePaths[]="+path.join(__dirname, 'node_modules/font-awesome/scss');
 
 module.exports = {
-  devtool: 'eval',
   entry: {
     components: [
       './src/HooplaComponents'
@@ -22,30 +18,8 @@ module.exports = {
       './app/index'
     ]
   },
-  output: {
-    path: path.join(__dirname, 'lib'),
-    filename: '[name].bundle.js',
-    publicPath: '/static/'
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': '"development"'
-      },
-      '__CURRENT_COMMIT__': __CURRENT_COMMIT__
-    }),
-  ],
-  resolve: {
-    extensions: ['', '.js']
-  },
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        loaders: ['react-hot', 'babel']
-      },
       {
         test: /\.scss$/,
         loader: 'style!css!sass?' + sassPaths
@@ -59,5 +33,8 @@ module.exports = {
         loader: "file-loader"
       }
     ]
+  },
+  resolve: {
+    extensions: ['', '.js']
   }
 };
