@@ -9,8 +9,6 @@ import Table from './components/Table';
 import Icon from './components/Icon';
 import Pagination from './components/Pagination';
 
-require('./styles/HooplaComponents.scss');
-
 export default {
   Input,
   Textarea,

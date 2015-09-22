@@ -12,6 +12,9 @@ module.exports = {
     components: [
       './src/HooplaComponents'
     ],
+    styles: [
+      './src/HooplaComponentStyles'
+    ],
     app: [
       'webpack-dev-server/client?http://localhost:9000',
       'webpack/hot/only-dev-server',
