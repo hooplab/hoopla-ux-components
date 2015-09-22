@@ -24,8 +24,7 @@ config.output = {
 
 config.module.loaders.push({
   test: /\.js$/,
-  loaders: ['babel'],
-  exclude: /node_modules/
+  loaders: ['babel']
 });
 
 module.exports = config;
