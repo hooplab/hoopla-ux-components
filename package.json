@@ -1,13 +1,13 @@
 {
   "name": "hoopla-components",
   "version": "0.0.1",
-  "main": "lib/HooplaComponents.js",
+  "main": "lib/components.bundle.js",
   "scripts": {
     "clean": "rimraf lib coverage",
     "start": "node server.js",
     "test": "mocha --compilers js:babel/register --recursive",
     "test:watch": "npm test -- --reporter dot --watch",
-    "build:lib": "babel src --out-dir lib && cp -r src/styles lib/styles",
+    "build:lib": "webpack --progress",
     "build": "npm run build:lib",
     "postinstall": "npm run build"
   },

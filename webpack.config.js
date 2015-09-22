@@ -16,7 +16,7 @@ module.exports = {
   devtool: 'eval',
   entry: {
     components: [
-      './lib/HooplaComponents'
+      './src/HooplaComponents'
     ],
     app: [
       'webpack-dev-server/client?http://localhost:9000',
