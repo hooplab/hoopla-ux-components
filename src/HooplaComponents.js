@@ -1,23 +1,11 @@
-import Input from './components/Input';
-import Textarea from './components/Textarea';
-import Button from './components/Button';
-import ProgressBar from './components/ProgressBar';
-import Feedback from './components/Feedback';
-import Radio from './components/Radio';
-import Checkbox from './components/Checkbox';
-import Table from './components/Table';
-import Icon from './components/Icon';
-import Pagination from './components/Pagination';
-
-export default {
-  Input,
-  Textarea,
-  Button,
-  ProgressBar,
-  Feedback,
-  Radio,
-  Checkbox,
-  Table,
-  Icon,
-  Pagination,
-};
+require('./styles/HooplaComponents.scss');
+export Input from './components/Input';
+export Textarea from './components/Textarea';
+export Button from './components/Button';
+export ProgressBar from './components/ProgressBar';
+export Feedback from './components/Feedback';
+export Radio from './components/Radio';
+export Checkbox from './components/Checkbox';
+export Table from './components/Table';
+export Icon from './components/Icon';
+export Pagination from './components/Pagination';

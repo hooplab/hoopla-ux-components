@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 require('./styles/app.scss');
 
@@ -39,4 +40,4 @@ class App extends Component {
   }
 }
 
-React.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
