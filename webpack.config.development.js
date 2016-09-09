@@ -25,7 +25,7 @@ config.output = {
 
 config.module.loaders.push({
   test: /\.js$/,
-  loaders: ['react-hot', 'babel'],
+  loaders: ['babel'],
   exclude: /node_modules/
 });
 
